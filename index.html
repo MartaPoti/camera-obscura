@@ -21,85 +21,92 @@
   </head>
   <body>
     <div class="container">
-      <form id="city-form">
-        <div class="input-group mb-3">
-          <input
-            type="text"
-            id="city-input"
-            class="form-control shadow-sm"
-            placeholder="type a city.."
-            aria-label="Recipient's username"
-            aria-describedby="button-addon2"
-            autofocus="on"
-          />
-          <button
-            class="btn btn-outline-secondary shadow-sm"
-            type="submit button"
-            id="button-addon2"
-          >
-            Change the city
-          </button>
-          <button
-            class="btn btn-outline-secondary shadow-sm"
-            type="button"
-            id="current"
-            id="button-addon2"
-          >
-            Current Location
-          </button>
+      <div class="weathercontainer">
+        <form id="city-form">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              id="city-input"
+              class="form-control shadow-sm"
+              placeholder="type a city.."
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+              autofocus="on"
+            />
+            <button
+              class="btn btn-outline-secondary shadow-sm"
+              type="submit button"
+              id="button-addon2"
+            >
+              Change the city
+            </button>
+            <button
+              class="btn btn-outline-secondary shadow-sm"
+              type="button"
+              id="current"
+              id="button-addon2"
+            >
+              Current Location
+            </button>
+          </div>
+        </form>
+        <div class="row header">
+          <div class="col-6">
+            <h3 id="weekday">Monday</h3>
+            <h4 id="hour">21:37</h4>
+          </div>
+          <div class="col-6">
+            <h1 id="city-output">Hamburg</h1>
+          </div>
         </div>
-      </form>
-      <div class="row header">
-        <div class="col-6">
-          <h3 id="weekday">Monday</h3>
-          <h4 id="hour">21:37</h4>
+        <div class="row section">
+          <div class="col-6">
+            <i class="fa-solid fa-wind"></i>
+          </div>
+          <div class="col-3">
+            <h2><span id="temp">3</span><span id="celcius">°C </span></h2>
+            <h5 id="description">clouds</h5>
+          </div>
+          <div class="col-3">
+            <section class="weather-data">
+              <div>Humidity: <span id="hum">95</span>%</div>
+              <div>Wind: <span id="wind">14</span>km/h</div>
+            </section>
+          </div>
         </div>
-        <div class="col-6">
-          <h1 id="city-output">Hamburg</h1>
-        </div>
-      </div>
-      <div class="row section">
-        <div class="col-6">
-          <i class="fa-solid fa-wind"></i>
-        </div>
-        <div class="col-3">
-          <h2><span id="temp">3</span><span id="celcius">°C </span></h2>
-          <h5 id="description">clouds</h5>
-        </div>
-        <div class="col-3">
-          <section class="weather-data">
-            <div>Humidity: <span id="hum">95</span>%</div>
-            <div>Wind: <span id="wind">14</span>km/h</div>
-          </section>
-        </div>
+
+        <section class="Weekdays row">
+          <div class="col day">
+            <div class="weekdayname">Tue</div>
+            <i class="fa-regular fa-snowflake"></i><br />9°C<br />12°C
+          </div>
+          <div class="col day">
+            <div class="weekdayname">Wed</div>
+            <i class="fa-regular fa-snowflake"></i><br />9°C<br />12°C
+          </div>
+          <div class="col day">
+            <div class="weekdayname">Thu</div>
+            <i class="fa-regular fa-snowflake"></i><br />9°C<br />12°C
+          </div>
+          <div class="col day">
+            <div class="weekdayname">Fri</div>
+            <i class="fa-regular fa-snowflake"></i><br />9°C<br />12°C
+          </div>
+          <div class="col day">
+            <div class="weekdayname">Sat</div>
+            <i class="fa-regular fa-snowflake"></i><br />9°C<br />12°C
+          </div>
+          <div class="col day">
+            <div class="weekdayname">Sun</div>
+            <i class="fa-regular fa-snowflake"></i><br />9°C<br />12°C
+          </div>
+        </section>
       </div>
 
-      <section class="Weekdays row">
-        <div class="col day">
-          <div class="weekdayname">Tue</div>
-          <i class="fa-regular fa-snowflake"></i><br />9°C<br />12°C
-        </div>
-        <div class="col day">
-          <div class="weekdayname">Wed</div>
-          <i class="fa-regular fa-snowflake"></i><br />9°C<br />12°C
-        </div>
-        <div class="col day">
-          <div class="weekdayname">Thu</div>
-          <i class="fa-regular fa-snowflake"></i><br />9°C<br />12°C
-        </div>
-        <div class="col day">
-          <div class="weekdayname">Fri</div>
-          <i class="fa-regular fa-snowflake"></i><br />9°C<br />12°C
-        </div>
-        <div class="col day">
-          <div class="weekdayname">Sat</div>
-          <i class="fa-regular fa-snowflake"></i><br />9°C<br />12°C
-        </div>
-        <div class="col day">
-          <div class="weekdayname">Sun</div>
-          <i class="fa-regular fa-snowflake"></i><br />9°C<br />12°C
-        </div>
-      </section>
+      <a href="https://github.com/MartaPoti/camera-obscura"
+        >Open-source code,</a
+      >
+      by Marta Poti
     </div>
     <script src="index.js"></script>
   </body>

@@ -23,16 +23,24 @@ h1 {
     font-size: larger;
     }
 
-.container {
+.weathercontainer {
     display: block;
-    border:1px solid blue;
-    border-radius: 35px;
+    border:1px solid rgb(157, 157, 157);
+    border-radius: 15px;
     background: src:"coverr-cloudy-sky-2765-1080p.mp4";
     margin-top: 30px;
     min-width: 402px;
     max-width:600px;
     max-height:440px;
-    padding:40px;
+    padding:40px;}
+
+    .container {
+            display: block;
+            
+            min-width: 402px;
+            max-width: 600px;
+            max-height: 460px;
+            padding: 40px;
   
 }
 .fa-wind {
